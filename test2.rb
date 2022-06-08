@@ -16,7 +16,13 @@ def test_input(a, b, c)
 		a = b
 		b = num
 	end
-  return(a - b == b - c)
+  puts (a - b == b - c)
 end
-puts test_input(5, 10, 15),"\n"
-puts test_input(2, 3, 11),"\n"
+puts "enter number:"
+a=Integer(gets)
+puts "enter number:"
+b=Integer(gets)
+puts "enter number:"
+c=Integer(gets)
+test_input(a, b, c)
+

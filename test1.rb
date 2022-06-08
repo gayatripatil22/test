@@ -2,15 +2,16 @@
 def test_input(a,b)
     if((a >= 20 && a <= 30) && (b >= 20 && b <= 30))
         if(a >b)
-            return a
+            puts a
         else
-            return b
+            puts b
         end
     else
-        return 0
+        puts 0
     end
 end
-puts test_input(10, 15),"\n"
-puts test_input(26, 29),"\n"
-puts test_input(22, 30),"\n"
-puts test_input(45, 55),"\n"
+puts "Enter the number :"
+ a=Integer(gets)
+ puts "Enter the number :"
+ b=Integer(gets)
+ test_input(a, b)
